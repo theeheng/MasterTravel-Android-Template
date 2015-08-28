@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:padding="15dp"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/depart_from_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/depart_from_airport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/depart_from_hour" />
+
+        <TextView
+            android:id="@+id/depart_to_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/depart_from_hour"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/depart_to_airport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/depart_from_airport"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/depart_to_hour" />
+
+        <TextView
+            android:id="@+id/duration_and_scales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/depart_to_hour"
+            android:textColor="@color/distance_text_color"
+            android:textSize="12sp" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/airline_thumnail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/depart_to_hour"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/duration_and_scales"
+            android:background="@android:color/white"
+            android:contentDescription="content description"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/airline_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/depart_to_hour"
+            android:layout_toRightOf="@+id/airline_thumnail" />
+
+        <RelativeLayout
+            android:id="@+id/scales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/airline_thumnail"
+            android:layout_marginTop="15dp">
+
+            <ImageButton
+                android:id="@+id/from_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ring_drawable"
+                android:src="@drawable/departure_grey" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/scales"
+            android:layout_below="@+id/departure_duration_and_scales"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/scales">
+
+            <TextView
+                android:id="@+id/scale_from_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scale_from_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scale_from_hour"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/scale_to_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scale_from_airport"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scale_to_airport"
+                android:textColor="@color/distance_text_color"
+                android:textSize="12sp" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/departure_airline_thumnail"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/duration"
+                android:layout_marginRight="3dp"
+                android:background="@android:color/white"
+                android:contentDescription="content description"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/scale_airline_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/duration"
+                android:layout_toRightOf="@+id/departure_airline_thumnail" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

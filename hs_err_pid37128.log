@@ -1,0 +1,113 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 2992 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=37128, tid=37304
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_71-b14) (build 1.7.0_71-b14)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.71-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000213f800):  JavaThread "main" [_thread_in_vm, id=37304, stack(0x0000000002230000,0x0000000002330000)]
+
+Stack: [0x0000000002230000,0x0000000002330000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000008878800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=14088, stack(0x000000000a110000,0x000000000a210000)]
+  0x0000000008874800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=23536, stack(0x0000000009d70000,0x0000000009e70000)]
+  0x00000000078ef000 JavaThread "Attach Listener" daemon [_thread_new, id=26108, stack(0x0000000000000000,0x0000000000000000)]
+  0x00000000078ee000 JavaThread "Signal Dispatcher" daemon [_thread_new, id=38804, stack(0x0000000000000000,0x0000000000000000)]
+  0x000000000212b000 JavaThread "Finalizer" daemon [_thread_blocked, id=31728, stack(0x0000000009a60000,0x0000000009b60000)]
+  0x000000000212a000 JavaThread "Reference Handler" daemon [_thread_blocked, id=9552, stack(0x00000000097d0000,0x00000000098d0000)]
+=>0x000000000213f800 JavaThread "main" [_thread_in_vm, id=37304, stack(0x0000000002230000,0x0000000002330000)]
+
+Other Threads:
+  0x00000000078cc800 VMThread [stack: 0x00000000098e0000,0x00000000099e0000] [id=9148]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000000002098800] Threads_lock - owner thread: 0x000000000213f800
+
+Heap
+ PSYoungGen      total 37888K, used 1310K [0x00000000f5500000, 0x00000000f7f00000, 0x0000000100000000)
+  eden space 32768K, 4% used [0x00000000f5500000,0x00000000f5647bd8,0x00000000f7500000)
+  from space 5120K, 0% used [0x00000000f7a00000,0x00000000f7a00000,0x00000000f7f00000)
+  to   space 5120K, 0% used [0x00000000f7500000,0x00000000f7500000,0x00000000f7a00000)
+ ParOldGen       total 85504K, used 0K [0x00000000e0000000, 0x00000000e5380000, 0x00000000f5500000)
+  object space 85504K, 0% used [0x00000000e0000000,0x00000000e0000000,0x00000000e5380000)
+ PSPermGen       total 21504K, used 2056K [0x00000000dae00000, 0x00000000dc300000, 0x00000000e0000000)
+  object space 21504K, 9% used [0x00000000dae00000,0x00000000db002148,0x00000000dc300000)
+
+Card table byte_map: [0x00000000053f0000,0x0000000005520000] byte_map_base: 0x0000000004d19000
+
+Polling page: 0x00000000001d0000
+
+Code Cache  [0x0000000002330000, 0x00000000025a0000, 0x0000000005330000)
+ total_blobs=156 nmethods=0 adapters=124 free_code_cache=48778Kb largest_free_block=49949312
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (1 events):
+Event: 0.054 Thread 0x000000000213f800 Threw 0x00000000f550ab00 at C:\re\jdk7u71\1605\hotspot\src\share\vm\prims\jni.cpp:3991
+
+Events (10 events):
+Event: 0.083 loading class 0x0000000007737750
+Event: 0.083 loading class 0x0000000007737750 done
+Event: 0.083 loading class 0x00000000077427f0
+Event: 0.083 loading class 0x00000000077427f0 done
+Event: 0.084 loading class 0x00000000076fd360
+Event: 0.084 loading class 0x00000000076fd360 done
+Event: 0.084 Thread 0x00000000078ee000 Thread added: 0x00000000078ee000
+Event: 0.084 Thread 0x00000000078ef000 Thread added: 0x00000000078ef000
+Event: 0.084 Thread 0x0000000008874800 Thread added: 0x0000000008874800
+Event: 0.084 Thread 0x0000000008878800 Thread added: 0x0000000008878800
+
+
+Dynamic libraries:
+0x000000013f960000 - 0x000000013f993000 	C:\PROGRA~1\Java\JDK17~1.0_7\bin\java.exe
+0x0000000077320000 - 0x00000000774c9000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077100000 - 0x000000007721f000 	C:\Windows\system32\kernel32.dll
+0x000007fefc4c0000 - 0x000007fefc52c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefdee0000 - 0x000007fefdfbb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefc740000 - 0x000007fefc7df000 	C:\Windows\system32\msvcrt.dll
+0x000007fefca50000 - 0x000007fefca6f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefc590000 - 0x000007fefc6bd000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077220000 - 0x000000007731a000 	C:\Windows\system32\USER32.dll
+0x000007fefcb90000 - 0x000007fefcbf7000 	C:\Windows\system32\GDI32.dll
+0x000007fefdcf0000 - 0x000007fefdcfe000 	C:\Windows\system32\LPK.dll
+0x000007fefcac0000 - 0x000007fefcb89000 	C:\Windows\system32\USP10.dll
+0x000007fefaba0000 - 0x000007fefad94000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefdc20000 - 0x000007fefdc91000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefdcc0000 - 0x000007fefdcee000 	C:\Windows\system32\IMM32.DLL
+0x000007fefdb10000 - 0x000007fefdc19000 	C:\Windows\system32\MSCTF.dll
+0x00000000702a0000 - 0x0000000070372000 	C:\PROGRA~1\Java\JDK17~1.0_7\jre\bin\msvcr100.dll
+0x000000005d890000 - 0x000000005e063000 	C:\PROGRA~1\Java\JDK17~1.0_7\jre\bin\server\jvm.dll
+0x000007fef80a0000 - 0x000007fef80a9000 	C:\Windows\system32\WSOCK32.dll

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sort_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/sort_title_flights"
+        android:textColor="@color/sort_big_title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sort_separator" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sort_background"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/sort_price"
+            android:textColor="@color/sort_item"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sort_separator" />
+
+        <TextView
+            android:id="@+id/departure_take_off_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/flight_sort_departure_take_off_time"
+            android:textColor="@color/sort_item"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sort_separator" />
+
+        <TextView
+            android:id="@+id/departure_landing_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/flight_sort_departure_landing_time"
+            android:textColor="@color/sort_item"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sort_separator" />
+
+        <TextView
+            android:id="@+id/return_take_off_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/flight_sort_return_take_off_time"
+            android:textColor="@color/sort_item"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sort_separator" />
+
+        <TextView
+            android:id="@+id/return_landing_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/flight_sort_return_landing_time"
+            android:textColor="@color/sort_item"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sort_separator" />
+
+        <TextView
+            android:id="@+id/sort_airline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/flight_sort_airline"
+            android:textColor="@color/sort_item"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sort_separator" />
+
+        <TextView
+            android:id="@+id/sort_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/flight_sort_duration"
+            android:textColor="@color/sort_item"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

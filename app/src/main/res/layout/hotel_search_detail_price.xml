@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/hotel_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/separator"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="$90"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/taxes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hotel_price"
+        android:layout_below="@+id/separator"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/hotel_price"
+        android:gravity="center_vertical"
+        android:text="@string/taxes_text"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hotel_price"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/separator"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/info_small" />
+</RelativeLayout>

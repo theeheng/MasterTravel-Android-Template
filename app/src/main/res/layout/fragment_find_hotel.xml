@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:background="@drawable/back_03"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/bed_big" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="bottom" android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <com.mastercard.travel.view.TwoLinesTextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawableLeft="@drawable/pin_trans_blue"
+            android:drawablePadding="@dimen/text_drawable_padding"
+            custom:firstLine="@string/find_hotel_location"
+            custom:secondLine="@string/find_hotel_location_hint" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.mastercard.travel.view.TwoLinesTextView
+                android:id="@+id/check_in"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:drawableLeft="@drawable/calendar_blue_trans"
+                android:drawablePadding="@dimen/text_drawable_padding"
+                custom:firstLine="@string/find_hotel_check_in" />
+
+            <com.mastercard.travel.view.TwoLinesTextView
+                android:id="@+id/check_out"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                custom:firstLine="@string/find_hotel_check_out" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <com.mastercard.travel.view.AmountView
+            android:id="@+id/guests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            custom:amount1="1"
+            custom:firstLine="@string/find_hotel_guests"
+            custom:icon1="@drawable/user_blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <com.mastercard.travel.view.AmountView
+            android:id="@+id/rooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            custom:amount1="1"
+            custom:firstLine="@string/find_hotel_roms"
+            custom:icon1="@drawable/bed_blue_trans" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/searchHotels"
+            style="@style/standartButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/standart_button_background"
+            android:text="@string/mock_search_hotels" />
+
+    </LinearLayout>
+</RelativeLayout>

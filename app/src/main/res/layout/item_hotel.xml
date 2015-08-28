@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="6dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="content description"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/price_text_color"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toLeftOf="@+id/price"
+        android:layout_toRightOf="@+id/hotel_image"
+        android:singleLine="true"
+        android:textColor="@color/title_text_color"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/title"
+        android:clickable="false"
+        android:isIndicator="true"
+        android:progressDrawable="@drawable/rating_bar" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_below="@id/rating_bar"
+        android:textColor="@color/review_text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_below="@id/detail"
+        android:textColor="@color/distance_text_color"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/pre-dexed/debug/classes-adb71d67710bfe9f5475fd20797a7db8bb96ea4e.jar" />
+    </item>
+    <item
+        jar="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/pre-dexed/debug/classes-76ae67d3f199ad69dcb70e5c19afe934af59a3a3.jar" />
+    </item>
+    <item
+        jar="/Users/matthogan/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.15/9093a362d18c5f81f58e49d86dece57d9b6e1cb7/library-1.0.15.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9093a362d18c5f81f58e49d86dece57d9b6e1cb7">
+        <dex dex="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/pre-dexed/debug/library-1.0.15-ce1d558ead97699651a9d32f333c26734f5cac0d.jar" />
+    </item>
+    <item
+        jar="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/pre-dexed/debug/classes-4f1cc052fd2fad0a06bf47173b0ee39a5002e42d.jar" />
+    </item>
+    <item
+        jar="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/exploded-aar/masterpass-android-library-release/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="93daeda727f973f26e838e32c5541427f168ff6e">
+        <dex dex="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/pre-dexed/debug/classes-d45db7b344f71c4dfa2b4e2121fc68cf950ea232.jar" />
+    </item>
+    <item
+        jar="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-a38585a76d96afb1ee121c51a47f18a7d42d6fba.jar" />
+    </item>
+    <item
+        jar="/Users/matthogan/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-01e7ce6339fdae672bf1a7b3873d76d432409b90.jar" />
+    </item>
+    <item
+        jar="/Users/matthogan/Documents/MasterTravel-Android-Template/app/libs/any-presence.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ca6ceb1ff33ea66a92414f6222384de7b022a8d">
+        <dex dex="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/pre-dexed/debug/any-presence-6114f6b946679362804f06c9a74eb451d7ee78bb.jar" />
+    </item>
+    <item
+        jar="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/matthogan/Documents/MasterTravel-Android-Template/app/build/intermediates/pre-dexed/debug/classes-52a3b2368213099976f69a3471e843476ff5cd9c.jar" />
+    </item>
+
+</items>

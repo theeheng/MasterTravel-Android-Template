@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_02">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone|web"
+            android:paddingBottom="20dp"
+            android:text="@string/register_message"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/dialog_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners"
+            android:hint="@string/register_hint_username"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_edit"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:text="@string/register_button"
+            android:textColor="@color/sign_text_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

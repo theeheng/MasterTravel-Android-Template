@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="ActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/ab_background</item>
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+    </style>
+
+
+
+
+    <style name="ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="radioButtonStyle">
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/radio_selector</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="radioButtonStyleWithStar" parent="radioButtonStyle">
+        <item name="android:drawableRight">@drawable/black_star</item>
+    </style>
+
+    <style name="standartButtonStyle">
+        <item name="android:drawableRight">@drawable/standart_button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/standart_button_background</item>
+    </style>
+
+    <style name="whiteButtonStyle">
+        <item name="android:textColor">@color/standart_button_color</item>
+        <item name="android:background">@drawable/white_button_background</item>
+    </style>
+
+    <style name="RadioButtonAppTheme" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/apptheme_btn_radio_holo_light</item>
+    </style>
+</resources>

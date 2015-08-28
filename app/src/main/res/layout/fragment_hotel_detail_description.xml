@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:padding="15dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mastercard.travel.view.TwoLinesTextView
+            android:id="@+id/hotel_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/pin_trans_blue"
+            app:firstLine="@string/detail_hotel_description_address" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.25"
+                android:background="@color/sort_separator"
+                android:padding="4dp"
+                android:src="@drawable/garage" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.25"
+                android:background="@color/sort_separator"
+                android:padding="4dp"
+                android:src="@drawable/wifi" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.25"
+                android:background="@color/sort_separator"
+                android:padding="4dp"
+                android:src="@drawable/pool" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@color/sort_separator"
+                android:padding="4dp"
+                android:src="@drawable/dog" />
+
+        </LinearLayout>
+
+        <com.mastercard.travel.view.TwoLinesTextView
+            android:id="@+id/hotel_amenities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:firstLine="@string/detail_hotel_description_amenities" />
+    </LinearLayout>
+
+</ScrollView>

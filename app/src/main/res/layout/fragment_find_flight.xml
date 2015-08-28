@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:background="@drawable/back_03"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/plane_big" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.mastercard.travel.view.TwoLinesTextView
+            android:id="@+id/from_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawableLeft="@drawable/departure_blue"
+            android:drawablePadding="@dimen/text_drawable_padding"
+            custom:firstLine="@string/find_flight_from"
+            custom:secondLine="@string/find_hotel_location_hint" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <com.mastercard.travel.view.TwoLinesTextView
+            android:id="@+id/to_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawableLeft="@drawable/arrive"
+            android:drawablePadding="@dimen/text_drawable_padding"
+            custom:firstLine="@string/find_flight_to"
+            custom:secondLine="@string/find_hotel_location_hint" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <com.mastercard.travel.view.AmountView
+            android:id="@+id/passengers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            custom:amount1="1"
+            custom:firstLine="@string/find_flight_passengers"
+            custom:icon1="@drawable/user_blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <com.mastercard.travel.view.TwoLinesTextView
+            android:id="@+id/cabin_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawableLeft="@drawable/economy_blue"
+            android:drawablePadding="@dimen/text_drawable_padding"
+            custom:firstLine="@string/find_cabin_class"
+            custom:secondLine="Economy" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.mastercard.travel.view.TwoLinesTextView
+                android:id="@+id/depart_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:drawableLeft="@drawable/calendar_blue_trans"
+                android:drawablePadding="@dimen/text_drawable_padding"
+                custom:firstLine="@string/find_flight_depart" />
+
+            <com.mastercard.travel.view.TwoLinesTextView
+                android:id="@+id/return_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                custom:firstLine="@string/find_flight_return" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/searchFlights"
+            style="@style/standartButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/standart_button_background"
+            android:text="@string/mock_search_hotels" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/from_airport_code"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/arrows"
+        android:layout_alignTop="@+id/arrows"
+        android:layout_marginRight="22sp"
+        android:layout_toLeftOf="@+id/arrows"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="FCO"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/arrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/arrow_grey" />
+
+
+    <TextView
+        android:id="@+id/to_airport_code"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@+id/arrows"
+        android:layout_alignBottom="@+id/arrows"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/arrows"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="DCA"
+        android:textSize="26sp" />
+
+    <include
+        android:id="@+id/search_details"
+        layout="@layout/flight_header_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrows"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" />
+
+    <ViewStub
+        android:id="@+id/stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_details"
+        android:layout="@layout/hotel_search_detail_price" />
+
+</RelativeLayout>

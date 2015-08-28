@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="firstLine" format="string" />
+    <attr name="secondLine" format="string" />
+
+    <attr name="amount1" format="integer" />
+    <attr name="icon1" format="reference" />
+
+    <declare-styleable name="TwoLinesTextView">
+        <attr name="firstLine" />
+        <attr name="secondLine" />
+    </declare-styleable>
+
+    <declare-styleable name="AmountView">
+        <attr name="firstLine" />
+        <attr name="amount1" />
+        <attr name="icon1" />
+    </declare-styleable>
+
+    <declare-styleable name="TwoLinesEditText">
+        <attr name="firstLine" />
+        <attr name="secondLine" />
+        <attr name="icon1" />
+    </declare-styleable>
+
+    <declare-styleable name="RangeSeekBar">
+        <attr name="absoluteMinValue" format="integer|float" />
+        <attr name="absoluteMaxValue" format="integer|float" />
+        <attr name="singleThumb" format="boolean" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="any-presence">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/any-presence.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
